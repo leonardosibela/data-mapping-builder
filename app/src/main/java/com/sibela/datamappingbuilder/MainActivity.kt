@@ -1,7 +1,7 @@
 package com.sibela.datamappingbuilder
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,4 +9,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    val student = Student.Builder()
+            .name("Alex")
+            .standard(10)
+            .rollNumber(720)
+            .build()
 }
